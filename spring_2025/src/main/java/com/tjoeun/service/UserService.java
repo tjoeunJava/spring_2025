@@ -71,8 +71,7 @@ public class UserService {
 	
 	// @Resource(name="loginUserDTO")
 	// private UserDTO loginUserDTO;
-	// DB 에 저장된 로그인한 회원의 정보를 가져와서
-	// Controller 쪽으로 전달해 줌
+	// DB 에 저장된 로그인한 회원의 정보를 가져와서 Controller 쪽으로 전달해 줌
 	public void getModifyUserInfo(UserDTO modifyUserDTO){
 		UserDTO tmpModifyUserDTO = userDAO.getModifyUserInfo(loginUserDTO.getUser_idx());
 		
