@@ -54,7 +54,7 @@ public class UserService {
 		}
 		// 로그인한 후 Session 에 있는 loginUserDTO 에 저장된
 		// 로그인한 회원 정보 확인하기
-		System.out.println("loginUserDTO : " + loginUserDTO);
+		System.out.println("loginUserDTO [UserService] : " + loginUserDTO);
 		
 		return;
 	}
