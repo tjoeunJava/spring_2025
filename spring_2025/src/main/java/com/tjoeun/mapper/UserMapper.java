@@ -23,7 +23,7 @@ public interface UserMapper {
 	//  ㄴ 가져와서, Spring Framework 가  Session Scope 에
 	//     서버 실행할 때 자동으로 생성해 놓은 UserDTO 에 
 	//     로그인한 회원의 정보를 위함 
-	// WHERE user_id = #{user_id} AND user_pw = #{user_pw} 소스 확인
+	// WHERE user_id = #{user_id} AND user_pw = #{user_pw} 소스 확인할 것
 	@Select("SELECT * " +
 	        "FROM user_table " +
 	        "WHERE user_id = #{user_id} AND user_pw = #{user_pw}")
