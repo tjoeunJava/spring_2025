@@ -25,7 +25,7 @@ public interface UserMapper {
 	//     로그인한 회원의 정보를 위함 
 	@Select("SELECT * " +
 	        "FROM user_table " +
-	        "WHERE user_id = #{user_id} AND user_pw = ${user_pw}")
+	        "WHERE user_id = #{user_id} AND user_pw = #{user_pw}")
 	UserDTO getLoginUserInfo(UserDTO loginProcUserDTO);
 	
 	@Select("SELECT * " +
